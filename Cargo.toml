@@ -1,0 +1,17 @@
+[package]
+name = "fuel-tx-inputs"
+description = "Test program to show Fuel transactions before and after inclusion"
+version = "0.1.0"
+edition = "2021"
+authors = ["Koh Wei Jie <contact@kohweijie.com>"]
+license = "Apache-2.0"
+
+[dependencies]
+fuels = { version = "0.57.0", features = ["fuel-core-lib"] }
+fuel-tx = "0.48.0"
+tokio = { version = "1.12", features = ["rt", "macros"] }
+hex = "0.4.3"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
